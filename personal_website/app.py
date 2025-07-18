@@ -91,7 +91,7 @@ def load_config():
 def sidebar():
     st.sidebar.title("Navigation")
     pages = ["Home", "About", "Projects", "Data Visualizations", "Skills", "Contact"]
-    return st.sidebar.selectbox("Go to", pages)
+    return st.sidebar.radio("Go to", pages)
 
 # Home page
 def home_page(config):
